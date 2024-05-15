@@ -12,5 +12,15 @@ export default defineConfig({
           assets: '/src/assets'
         },
       },
+        build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
+  server: {
+    historyApiFallback: true,
+  },
       base: '/react_vite/',
     });
